@@ -1,6 +1,6 @@
 {
   "name": "react-messenger",
-  "homepage": "https://rahul020800.github.io/LetsTalk",
+  "homepage": "https://rahul020800.github.io/Global-talk-2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,12 +10,15 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "firebase": "^7.17.2",
+    "gh-pages": "^3.2.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-flip-move": "^3.0.4",
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
